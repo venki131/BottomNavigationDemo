@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity implements StoreFragment.OnF
         layoutParams.setBehavior(new BottomNavigationBehavior());
     }
 
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
